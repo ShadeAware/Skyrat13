@@ -54,7 +54,7 @@
 
 ///Power Armor
 /datum/design/powerarmor_skeleton
-	name = "Powerarmor Skeleton"
+	name = "Power Armor Skeleton"
 	id = "powerarmor_skeleton"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/chassis/powerarmor
@@ -63,7 +63,7 @@
 	category = list("Misc")
 
 /datum/design/powerarmor_torso
-	name = "Powerarmor Torso"
+	name = "Power Armor Torso"
 	id = "powerarmor_torso"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/powerarmor_torso
@@ -72,7 +72,7 @@
 	category = list("Misc")
 
 /datum/design/powerarmor_helmet
-	name = "Powerarmor Helmet"
+	name = "Power Armor Helmet"
 	id = "powerarmor_helmet"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/powerarmor_helmet
@@ -81,7 +81,7 @@
 	category = list("Misc")
 
 /datum/design/powerarmor_armL
-	name = "Powerarmor Left Arm"
+	name = "Power Armor Left Arm"
 	id = "powerarmor_armL"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/powerarmor_left_arm
@@ -90,7 +90,7 @@
 	category = list("Misc")
 
 /datum/design/powerarmor_armR
-	name = "Powerarmor Right Arm"
+	name = "Power Armor Right Arm"
 	id = "powerarmor_armR"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/powerarmor_right_arm
@@ -99,7 +99,7 @@
 	category = list("Misc")
 
 /datum/design/powerarmor_legL
-	name = "Powerarmor Left Leg"
+	name = "Power Armor Left Leg"
 	id = "powerarmor_legL"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/powerarmor_left_leg
@@ -108,7 +108,7 @@
 	category = list("Misc")
 
 /datum/design/powerarmor_legR
-	name = "Powerarmor Right Leg"
+	name = "Power Armor Right Leg"
 	id = "powerarmor_legR"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/part/powerarmor_right_leg

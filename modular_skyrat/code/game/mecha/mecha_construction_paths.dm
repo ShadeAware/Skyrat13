@@ -1,4 +1,6 @@
-/datum/component/construction/unordered/mecha_chassis/skyrat/custom_action(obj/item/I, mob/living/user, typepath)
+///None of this is working. Leave it here for the time being, maybe someone else will be able to revive this part of the code.
+
+/*/datum/component/construction/unordered/mecha_chassis/skyrat/custom_action(obj/item/I, mob/living/user, typepath)
 	. = user.transferItemToLoc(I, parent)
 	if(.)
 		var/atom/parent_atom = parent
@@ -87,3 +89,4 @@
 		if(6)
 			user.visible_message("[user] secures the capacitor, causing [parent] to retract into itself.", "<span_class='notice'>You secure the capacitor to [parent], causing it to retract into itself. It is ready for use!")
 	return TRUE
+*/

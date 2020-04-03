@@ -221,7 +221,7 @@
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
 /obj/item/clothing/head/helmet/space/hardsuit/security/powerarmor
-	name = "Powerarmor Helmet"
+	name = "Power Armor Helmet"
 	desc = "An advanced helmet attached to a powered exoskeleton suit. Protects well against most forms of harm, but struggles against exotic hazards."
 	icon = 'modular_skyrat/icons/obj/clothing/hats.dmi'
 	alternate_worn_icon = 'modular_skyrat/icons/mob/head.dmi'
@@ -232,8 +232,20 @@
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 40, "bio" = 100, "rad" = 5, "fire" = 75, "acid" = 100)
 	resistance_flags = ACID_PROOF
 
+/obj/item/clothing/head/helmet/space/hardsuit/security/powerarmor/equipped(mob/living/carbon/human/user, slot)
+	..()
+	if (slot == SLOT_HEAD)
+		var/datum/atom_hud/DHUD = GLOB.huds[DATA_HUD_MEDICAL_ADVANCED]
+		DHUD.add_hud_to(user)
+
+/obj/item/clothing/head/helmet/space/hardsuit/security/powerarmor/dropped(mob/living/carbon/human/user)
+	..()
+	if (user.head == src)
+		var/datum/atom_hud/DHUD = GLOB.huds[DATA_HUD_MEDICAL_ADVANCED]
+		DHUD.remove_hud_from(user)
+
 /obj/item/clothing/suit/space/hardsuit/security/powerarmor
-	name = "Powerarmor"
+	name = "Power Armor"
 	desc = "A self-powered exoskeleton suit comprised of flexible Plasteel sheets and advanced components, designed to offer excellent protection while still allowing mobility. Does not protect against Space, and struggles against more exotic hazards."
 	icon = 'modular_skyrat/icons/obj/clothing/suits.dmi'
 	alternate_worn_icon = 'modular_skyrat/icons/mob/suit.dmi'
