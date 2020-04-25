@@ -165,6 +165,112 @@
 /obj/item/tank/jetpack/suit
 	suit_attachment = TRUE
 
+///////////////////////// POWER ARMOR MODULES /////////////////////////////
+/obj/item/attachment/
+	name = "Power Armor Attachment"
+	desc = "Some kind of attachment made for use in a suit of Power Armor. It appears unfinished and nonfunctional."
+	icon = 'icons/obj/surgery.dmi'
+	icon_state = "implant-toolkit"
+	suit_attachment = TRUE
+	var/items_list = list()
+	var/obj/item/holder = null
+
+/obj/item/attachment/Initialize()
+	. = ..()
+	if(ispath(holder))
+		holder = new holder(src)
+
+	update_icon()
+	items_list = contents.Copy()
+
+/obj/item/attachment/Remove(special = FALSE)
+	Retract()
+	..()
+
+/obj/item/attachment/emp_act(severity)
+	. = ..()
+	if(. & EMP_PROTECT_SELF)
+		return
+	if(prob(15/severity) && owner)
+		Retract()
+
+/obj/item/attachment/proc/Retract()
+	if(!holder || (holder in src))
+		return
+
+	owner.visible_message("<span class='notice'>[owner] retracts [holder] back into [owner.p_their()] Power Armor.</span>",
+		"<span class='notice'>[holder] snaps back into your Power Armor.</span>",
+		"<span class='italics'>You hear a short mechanical noise.</span>")
+
+	owner.transferItemToLoc(holder, src, TRUE)
+	holder = null
+	playsound(get_turf(owner), 'sound/mecha/mechmove03.ogg', 50, 1)
+
+/obj/item/attachment/proc/Extend(var/obj/item/item)
+	if(!(item in src))
+		return
+
+	holder = item
+
+	ADD_TRAIT(holder, TRAIT_NODROP, HAND_REPLACEMENT_TRAIT)
+	holder.resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
+	holder.slot_flags = null
+	holder.set_custom_materials(null)
+
+	var/obj/item/arm_item = owner.get_active_held_item()
+
+	if(arm_item)
+		if(!owner.dropItemToGround(arm_item))
+			to_chat(owner, "<span class='warning'>Your [arm_item] interferes with [src]!</span>")
+			return
+		else
+			to_chat(owner, "<span class='notice'>You drop [arm_item] to activate [src]!</span>")
+
+	var/result = (user.put_in_r_hand(holder))
+	if(!result)
+		to_chat(owner, "<span class='warning'>Your [name] fails to activate!</span>")
+		return
+
+
+	owner.swap_hand(result)
+
+	owner.visible_message("<span class='notice'>[owner] extends [holder] from [owner.p_their()] [zone == BODY_ZONE_R_ARM ? "right" : "left"] arm.</span>",
+		"<span class='notice'>You extend [holder] from your [zone == BODY_ZONE_R_ARM ? "right" : "left"] arm.</span>",
+		"<span class='italics'>You hear a short mechanical noise.</span>")
+	playsound(get_turf(owner), 'sound/mecha/mechmove03.ogg', 50, 1)
+
+/obj/item/attachment/ui_action_click()
+	if(!holder || (holder in src))
+		holder = null
+		if(contents.len == 1)
+			Extend(contents[1])
+		else
+			var/list/choice_list = list()
+			for(var/obj/item/I in items_list)
+				choice_list[I] = image(I)
+			var/obj/item/choice = show_radial_menu(owner, owner, choice_list)
+			if(owner && owner == usr && owner.stat != DEAD && /*(src in owner.internal_organs) &&*/ !holder && (choice in contents))
+				// modified implant code
+				Extend(choice)
+	else
+		Retract()
+
+/obj/item/attachment/toolset
+	name = "Power Armor toolset attachment"
+	desc = "A stripped-down version of the engineering cyborg toolset, designed to be installed on a suit of Power Armor. Contains all the tools you might need."
+	contents = newlist(/obj/item/screwdriver/cyborg, /obj/item/wrench/cyborg, /obj/item/weldingtool/largetank/cyborg,
+		/obj/item/crowbar/cyborg, /obj/item/wirecutters/cyborg, /obj/item/multitool/cyborg)
+
+/obj/item/attachment/flash
+	name = "Power Armor high-intensity photon projector"
+	desc = "An integrated projector designed to be installed into a suit of Power Armor. When extended, can be used as a powerful flash device."
+	contents = newlist(/obj/item/assembly/flash/armimplant)
+
+/obj/item/attachment/shield
+	name = "Power Armr integrated riot shield"
+	desc = "A deployable riot shield to help deal with civil unrest."
+	contents = newlist(/obj/item/shield/riot/implant)
+
 //Power armor
 /obj/item/clothing/head/helmet/space/hardsuit/powerarmor
 	name = "Power Armor Helmet MK. I"
