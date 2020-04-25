@@ -92,7 +92,7 @@
 
 /obj/item/melee/transforming/armblade/ui_action_click(mob/user, action)
 	var/datum/action/item_action/hightractionaction = action
-	if(istype(action, /datum/action/item_action/extendoblade) && istype(loc, /obj/item/clothing/suit/space/hardsuit) && !extendo)
+	if(istype(action, /datum/action/item_action/extendoblade) && istype(loc, /obj/item/clothing/suit/space/hardsuit))
 		var/mob/living/carbon/human/H = user
 		if(H)
 			var/obj/item/arm_item = user.get_active_held_item()
@@ -109,9 +109,9 @@
 			if(istype(hightractionaction))
 				hightractionaction.desc = "[extendo ? "Retract":"Extend"] the hardsuit's blade."
 
-	else if (istype(action, /datum/action/item_action/extendoblade) && istype(loc, /obj/item/clothing/suit/space/hardsuit) && extendo)
+	else if (istype(action, /datum/action/item_action/extendoblade) && !istype(loc, /obj/item/clothing/suit/space/hardsuit))
 		REMOVE_TRAIT(src, TRAIT_NODROP, "hardsuit")
-		user.transferItemToLoc(src, loc)
+		user.transferItemToLoc(src, get_item_by_slot(SLOT_WEAR_SUIT))
 		playsound(get_turf(user), 'sound/mecha/mechmove03.ogg', 50, 1)
 		extendo = !extendo
 		if(istype(hightractionaction))
@@ -138,14 +138,22 @@
 		to_chat(user, "<span class='notice'>[src] [active ? "has been extended":"has been concealed"].</span>")
 
 /obj/item/melee/transforming/armblade/attack(mob/living/target, mob/living/carbon/human/user)
-	if(!istype(loc, /obj/item/clothing/suit/space/hardsuit))
+	var/obj/item/clothing/suit/space/hardsuit/hard = user.get_item_by_slot(SLOT_WEAR_SUIT)
+	if(!istype(hard))
+		to_chat(user, "<span class='notice'>[src] can only be used while attached to a hardsuit.</span>")
+		return FALSE
+	else if(!(src in hard.currentattachments))
 		to_chat(user, "<span class='notice'>[src] can only be used while attached to a hardsuit.</span>")
 		return FALSE
 	else
 		..()
 
 /obj/item/melee/transforming/armblade/attack_self(mob/living/carbon/user)
-	if(!istype(loc, /obj/item/clothing/suit/space/hardsuit))
+	var/obj/item/clothing/suit/space/hardsuit/hard = user.get_item_by_slot(SLOT_WEAR_SUIT)
+	if(!istype(hard))
+		to_chat(user, "<span class='notice'>[src] can only be used while attached to a hardsuit.</span>")
+		return FALSE
+	else if(!(src in hard.currentattachments))
 		to_chat(user, "<span class='notice'>[src] can only be used while attached to a hardsuit.</span>")
 		return FALSE
 	else
