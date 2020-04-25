@@ -10,6 +10,7 @@
 			if(istype(src, I.suit_type))
 				var/obj/item/O = new I(src)
 				currentattachments += O
+				O.on_suit_attach(src)
 
 /obj/item/clothing/suit/space/hardsuit/attackby(obj/item/I, mob/user, params)
 	if(!attachitem(I, user))
@@ -31,6 +32,7 @@
 					return FALSE
 			if(user.transferItemToLoc(I, src))
 				currentattachments += I
+				I.on_suit_attach(src, user)
 				to_chat(user, "<span class='notice'>You successfully install [I] on [src].</span>")
 				return TRUE
 			else
@@ -42,6 +44,7 @@
 	for(var/obj/item/O in currentattachments)
 		O.forceMove(drop_location())
 		currentattachments -= O
+		O.on_suit_unattach(src, user)
 		to_chat(user, "<span class='notice'>You successfully remove the [O] from [src].</span>")
 	return TRUE
 
@@ -111,7 +114,7 @@
 
 	else if (istype(action, /datum/action/item_action/extendoblade) && !istype(loc, /obj/item/clothing/suit/space/hardsuit))
 		REMOVE_TRAIT(src, TRAIT_NODROP, "hardsuit")
-		user.transferItemToLoc(src, get_item_by_slot(SLOT_WEAR_SUIT))
+		user.transferItemToLoc(src, user.get_item_by_slot(SLOT_WEAR_SUIT))
 		playsound(get_turf(user), 'sound/mecha/mechmove03.ogg', 50, 1)
 		extendo = !extendo
 		if(istype(hightractionaction))
