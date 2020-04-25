@@ -1,32 +1,66 @@
-//Security HEV
-/obj/item/clothing/head/helmet/space/hardsuit/security/metrocop
-	name = "security HEV suit helmet"
-	desc = "This helmet seems like something out of this world... It has been designed by Nanotrasen for their security teams to be used during emergency operations in hazardous environments. This one provides more protection from the environment in exchange for the usual combat protection of a regular security suit."
-	icon = 'modular_skyrat/icons/obj/clothing/hats.dmi'
-	mob_overlay_icon = 'modular_skyrat/icons/mob/clothing/head.dmi'
-	anthro_mob_worn_overlay = 'modular_skyrat/icons/mob/clothing/head_muzzled.dmi'
-	icon_state = "hardsuit0-metrocop"
-	item_state = "hardsuit0-metrocop"
-	hardsuit_type = "metrocop"
-	armor = list("melee" = 50, "bullet" = 10, "laser" = 25, "energy" = 10, "bomb" = 60, "bio" = 100, "rad" = 75, "fire" = 100, "acid" = 100)
-	resistance_flags = FIRE_PROOF | ACID_PROOF | GOLIATH_RESISTANCE
-	mutantrace_variation = STYLE_MUZZLE
+//Base suit and modules
+/obj/item/clothing/suit/space/hardsuit
+	var/list/startingattachments = list() //list of "modules" installed on initialization
+	var/list/currentattachments = list() //list of "modules" currently being used
 
-/obj/item/clothing/suit/space/hardsuit/security/metrocop
-	name = "security HEV suit"
-	desc = "This suit seems like something out of this world... It has been designed by Nanotrasen for their security teams to be used during emergency operations in hazardous environments. This one provides more protection from the environment in exchange for the usual combat protection of a regular security suit."
-	icon = 'modular_skyrat/icons/obj/clothing/suits.dmi'
-	mob_overlay_icon = 'modular_skyrat/icons/mob/clothing/suit.dmi'
-	anthro_mob_worn_overlay = 'modular_skyrat/icons/mob/clothing/suit_digi.dmi'
-	icon_state = "hardsuit-metrocop"
-	item_state = "hardsuit-metrocop"
-	hardsuit_type = "metrocop"
-	armor = list("melee" = 50, "bullet" = 10, "laser" = 25, "energy" = 10, "bomb" = 60, "bio" = 100, "rad" = 75, "fire" = 100, "acid" = 100)
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/metrocop
-	resistance_flags = FIRE_PROOF | ACID_PROOF | GOLIATH_RESISTANCE
-	mutantrace_variation = STYLE_DIGITIGRADE
+/obj/item/clothing/suit/space/hardsuit/Initialize()
+	. = ..()
+	if(startingattachments.len)
+		for(var/obj/item/I in startingattachments)
+			if(istype(src, I.suit_type))
+				var/obj/item/O = new I(src)
+				currentattachments += O
 
-//Snowflake hardsuit modules
+/obj/item/clothing/suit/space/hardsuit/attackby(obj/item/I, mob/user, params)
+	if(!attachitem(I, user))
+		if(istype(I, /obj/item/screwdriver))
+			if(src == user.get_item_by_slot(SLOT_WEAR_SUIT))
+				to_chat(user, "<span class='warning'>You cannot remove [src]'s attachments while it is being worn.</span>")
+				return FALSE
+			else
+				removeallattachments(user)
+				return TRUE
+	return ..()
+
+/obj/item/clothing/suit/space/hardsuit/proc/attachitem(obj/item/I, mob/user)
+	if(I.suit_attachment)
+		if(istype(src, I.suit_type)) //i don't think it's possible to get a "base" hardsuit ingame via normal means - this shouldn't cause many problems
+			for(var/obj/item/sameitem in currentattachments)
+				if(istype(I, sameitem))
+					to_chat(user, "<span class='notice'>[src] already has an attachment of the same type! Remove similar attachments before attaching [I].</span>")
+					return FALSE
+			if(user.transferItemToLoc(I, src))
+				currentattachments += I
+				to_chat(user, "<span class='notice'>You successfully install [I] on [src].</span>")
+				return TRUE
+			else
+				to_chat(user, "<span class='notice'>[I] could not be installed on [src].</span>")
+				return FALSE
+	return FALSE
+
+/obj/item/clothing/suit/space/hardsuit/proc/removeallattachments(mob/user)
+	for(var/obj/item/O in currentattachments)
+		O.forceMove(drop_location())
+		currentattachments -= O
+		to_chat(user, "<span class='notice'>You successfully remove the [O] from [src].</span>")
+	return TRUE
+
+/obj/item/clothing/suit/space/hardsuit/equipped(mob/user, slot)
+	..()
+	if(slot == SLOT_WEAR_SUIT)
+		for(var/obj/item/I in currentattachments)
+			for(var/datum/action/A in I.actions)
+				A.Grant(user)
+
+/obj/item/clothing/suit/space/hardsuit/dropped(mob/user)
+	..()
+	for(var/obj/item/I in currentattachments)
+		for(var/datum/action/A in I.actions)
+			A.Remove(user)
+		if(I.loc != src)
+			I.forceMove(src)
+
+//Hardsuit "modules"
 /obj/item/melee/transforming/armblade
 	name = "Hardsuit Blade"
 	desc = "A pointy, murdery blade that can be attached to your hardsuit."
@@ -48,38 +82,40 @@
 	var/item_state_on = "energy_katana"
 	attack_verb_off = list("bopped")
 	total_mass_on = 0.6
-	var/obj/item/clothing/suit/space/hardsuit/mastersuit = null
 	actions_types = list(/datum/action/item_action/extendoblade)
 	var/extendo = FALSE
+	suit_attachment = TRUE
 
 /datum/action/item_action/extendoblade
 	name = "Extend Blade"
 	desc = "Extend the hardsuit's blade."
 
 /obj/item/melee/transforming/armblade/ui_action_click(mob/user, action)
-	if(istype(action, /datum/action/item_action/extendoblade) && mastersuit && !extendo)
+	var/datum/action/item_action/hightractionaction = action
+	if(istype(action, /datum/action/item_action/extendoblade) && istype(loc, /obj/item/clothing/suit/space/hardsuit) && !extendo)
 		var/mob/living/carbon/human/H = user
 		if(H)
 			var/obj/item/arm_item = user.get_active_held_item()
 			if(arm_item)
 				if(!user.dropItemToGround(arm_item))
-					to_chat(user, "<span class='warning'>Your [arm_item] interferes with [src]!</span>")
+					to_chat(user, "<span class='warning'>Your [arm_item] interferes with the activation of [src]!</span>")
 					return
 				else
 					to_chat(user, "<span class='notice'>You drop [arm_item] to activate [src]!</span>")
 			user.put_in_r_hand(src)
 			ADD_TRAIT(src, TRAIT_NODROP, "hardsuit")
-			playsound(get_turf(user), 'sound/mecha/mechmove03.ogg', 50, 1)
+			playsound(get_turf(user), 'sound/mecha/mechmove03.ogg', 50, pick(-1,0,1))
 			extendo = !extendo
+			if(istype(hightractionaction))
+				hightractionaction.desc = "[extendo ? "Retract":"Extend"] the hardsuit's blade."
 
-	else if (istype(action, /datum/action/item_action/extendoblade) && mastersuit && extendo)
+	else if (istype(action, /datum/action/item_action/extendoblade) && istype(loc, /obj/item/clothing/suit/space/hardsuit) && extendo)
 		REMOVE_TRAIT(src, TRAIT_NODROP, "hardsuit")
-		user.transferItemToLoc(src, mastersuit, TRUE)
+		user.transferItemToLoc(src, loc)
 		playsound(get_turf(user), 'sound/mecha/mechmove03.ogg', 50, 1)
 		extendo = !extendo
-		for(var/X in src.actions)
-			var/datum/action/A = X
-			A.Grant(user)
+		if(istype(hightractionaction))
+			hightractionaction.desc = "[extendo ? "Retract":"Extend"] the hardsuit's blade."
 
 /obj/item/melee/transforming/armblade/Initialize()
 	..()
@@ -102,106 +138,21 @@
 		to_chat(user, "<span class='notice'>[src] [active ? "has been extended":"has been concealed"].</span>")
 
 /obj/item/melee/transforming/armblade/attack(mob/living/target, mob/living/carbon/human/user)
-	if(!mastersuit)
+	if(!istype(loc, /obj/item/clothing/suit/space/hardsuit))
 		to_chat(user, "<span class='notice'>[src] can only be used while attached to a hardsuit.</span>")
-		return
+		return FALSE
 	else
 		..()
 
 /obj/item/melee/transforming/armblade/attack_self(mob/living/carbon/user)
-	if(!mastersuit)
+	if(!istype(loc, /obj/item/clothing/suit/space/hardsuit))
 		to_chat(user, "<span class='notice'>[src] can only be used while attached to a hardsuit.</span>")
-		return
+		return FALSE
 	else
 		..()
 
-/obj/item/clothing/suit/space/hardsuit
-	var/obj/item/melee/transforming/armblade = null
-
-/obj/item/clothing/suit/space/hardsuit/Initialize()
-	if(jetpack && ispath(jetpack))
-		jetpack = new jetpack(src)
-	if(armblade && ispath(armblade))
-		armblade = new armblade(src)
-	. = ..()
-
-/obj/item/clothing/suit/space/hardsuit/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/tank/jetpack/suit))
-		if(jetpack)
-			to_chat(user, "<span class='warning'>[src] already has a jetpack installed.</span>")
-			return
-		if(src == user.get_item_by_slot(SLOT_WEAR_SUIT)) //Make sure the player is not wearing the suit before applying the upgrade.
-			to_chat(user, "<span class='warning'>You cannot install the upgrade to [src] while wearing it.</span>")
-			return
-
-		if(user.transferItemToLoc(I, src))
-			jetpack = I
-			to_chat(user, "<span class='notice'>You successfully install the jetpack into [src].</span>")
-			return
-	else if(istype(I, /obj/item/screwdriver))
-		if(!jetpack)
-			to_chat(user, "<span class='warning'>[src] has no jetpack installed.</span>")
-			return
-		if(src == user.get_item_by_slot(SLOT_WEAR_SUIT))
-			to_chat(user, "<span class='warning'>You cannot remove the jetpack from [src] while wearing it.</span>")
-			return
-
-		jetpack.turn_off(user)
-		jetpack.forceMove(drop_location())
-		jetpack = null
-		to_chat(user, "<span class='notice'>You successfully remove the jetpack from [src].</span>")
-		if(!armblade)
-			to_chat(user, "<span class='warning'>[src] has no armblade installed.</span>")
-			return
-		if(src == user.get_item_by_slot(SLOT_WEAR_SUIT))
-			to_chat(user, "<span class='warning'>You cannot remove the armblade from [src] while wearing it.</span>")
-			return
-		armblade.forceMove(drop_location())
-		var/obj/item/melee/transforming/armblade/M = armblade
-		if(M)
-			M.mastersuit = null
-		armblade = null
-		to_chat(user, "<span class='notice'>You successfully remove the armblade from [src].</span>")
-		return
-	else if(istype(I, /obj/item/melee/transforming/armblade))
-		if(armblade)
-			to_chat(user, "<span class='warning'>[src] already has an armblade installed.</span>")
-			return
-		if(src == user.get_item_by_slot(SLOT_WEAR_SUIT))
-			to_chat(user, "<span class='warning'>You cannot install the upgrade to [src] while wearing it.</span>")
-			return
-
-		if(user.transferItemToLoc(I, src))
-			var/obj/item/melee/transforming/armblade/M = I
-			M.mastersuit = src
-			src.armblade = M
-			to_chat(user, "<span class='notice'>You successfully install the armblade into [src].</span>")
-			return
-	return ..()
-
-/obj/item/clothing/suit/space/hardsuit/equipped(mob/user, slot)
-	..()
-	if(jetpack)
-		if(slot == SLOT_WEAR_SUIT)
-			for(var/X in jetpack.actions)
-				var/datum/action/A = X
-				A.Grant(user)
-	if(armblade)
-		if(slot == SLOT_WEAR_SUIT)
-			for(var/X in armblade.actions)
-				var/datum/action/A = X
-				A.Grant(user)
-
-/obj/item/clothing/suit/space/hardsuit/dropped(mob/user)
-	..()
-	if(jetpack)
-		for(var/X in jetpack.actions)
-			var/datum/action/A = X
-			A.Remove(user)
-	if(armblade)
-		for(var/X in armblade.actions)
-			var/datum/action/A = X
-			A.Remove(user)
+/obj/item/tank/jetpack/suit
+	suit_attachment = TRUE
 
 //Power armor
 /obj/item/clothing/head/helmet/space/hardsuit/powerarmor
@@ -325,3 +276,31 @@
 	explosion(src.loc,0,0,3,flame_range = 3)
 	qdel(src)
 	return
+
+//Security HEV
+/obj/item/clothing/head/helmet/space/hardsuit/security/metrocop
+	name = "security HEV suit helmet"
+	desc = "This helmet seems like something out of this world... It has been designed by Nanotrasen for their security teams to be used during emergency operations in hazardous environments. This one provides more protection from the environment in exchange for the usual combat protection of a regular security suit."
+	icon = 'modular_skyrat/icons/obj/clothing/hats.dmi'
+	mob_overlay_icon = 'modular_skyrat/icons/mob/clothing/head.dmi'
+	anthro_mob_worn_overlay = 'modular_skyrat/icons/mob/clothing/head_muzzled.dmi'
+	icon_state = "hardsuit0-metrocop"
+	item_state = "hardsuit0-metrocop"
+	hardsuit_type = "metrocop"
+	armor = list("melee" = 50, "bullet" = 10, "laser" = 25, "energy" = 10, "bomb" = 60, "bio" = 100, "rad" = 75, "fire" = 100, "acid" = 100)
+	resistance_flags = FIRE_PROOF | ACID_PROOF | GOLIATH_RESISTANCE
+	mutantrace_variation = STYLE_MUZZLE
+
+/obj/item/clothing/suit/space/hardsuit/security/metrocop
+	name = "security HEV suit"
+	desc = "This suit seems like something out of this world... It has been designed by Nanotrasen for their security teams to be used during emergency operations in hazardous environments. This one provides more protection from the environment in exchange for the usual combat protection of a regular security suit."
+	icon = 'modular_skyrat/icons/obj/clothing/suits.dmi'
+	mob_overlay_icon = 'modular_skyrat/icons/mob/clothing/suit.dmi'
+	anthro_mob_worn_overlay = 'modular_skyrat/icons/mob/clothing/suit_digi.dmi'
+	icon_state = "hardsuit-metrocop"
+	item_state = "hardsuit-metrocop"
+	hardsuit_type = "metrocop"
+	armor = list("melee" = 50, "bullet" = 10, "laser" = 25, "energy" = 10, "bomb" = 60, "bio" = 100, "rad" = 75, "fire" = 100, "acid" = 100)
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/metrocop
+	resistance_flags = FIRE_PROOF | ACID_PROOF | GOLIATH_RESISTANCE
+	mutantrace_variation = STYLE_DIGITIGRADE
