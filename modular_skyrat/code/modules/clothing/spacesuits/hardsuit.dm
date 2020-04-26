@@ -166,7 +166,7 @@
 	suit_attachment = TRUE
 
 ///////////////////////// POWER ARMOR MODULES /////////////////////////////
-/obj/item/melee/transforming/armblade/powerarmor-blade
+/obj/item/melee/transforming/armblade/powerarmor_blade
 	name = "Power Armor armblade"
 	desc = "A long, sharp and retractable arm-mounted blade. Made to be attached to a suit of Power Armor."
 	icon = 'modular_skyrat/icons/obj/powerarmor_attachments.dmi'
@@ -189,8 +189,7 @@
 	name = "Extend Holotool"
 	desc = "Extend the Power Armor's holotool."
 
-/obj/item/holotool/powerarmor_holotool/ui_action_click(mob/user, action)
-	var/datum/action/item_action/hightractionaction = action
+var/datum/action/item_action/hightractionaction = action
 	if(istype(action) && istype(loc, /obj/item/clothing/suit/space/hardsuit/))
 		var/mob/living/carbon/human/H = user
 		if(H)
@@ -206,6 +205,7 @@
 		playsound(get_turf(user), 'sound/mecha/mechmove03.ogg', 50, pick(list(-1,0,1)))
 		extendo = !extendo
 		if(istype(hightractionaction))
+			hightractionaction.desc = "Toggle the Power Armor's holotool."
 			hightractionaction.desc = "[extendo ? "Retract":"Extend"] the Power Armor's holotool."
 
 	else if (istype(action) && !istype(loc, /obj/item/clothing/suit/space/hardsuit))
@@ -215,7 +215,6 @@
 		extendo = !extendo
 		if(istype(hightractionaction))
 			hightractionaction.desc = "[extendo ? "Retract":"Extend"] the Power Armors holotool."
-
 
 /obj/item/holotool/powerarmor_holotool/CtrlClick(mob/user)
 	var/obj/item/clothing/suit/space/hardsuit/hard = user.get_item_by_slot(SLOT_WEAR_SUIT)
