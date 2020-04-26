@@ -184,6 +184,48 @@
 	suit_attachment = TRUE
 	suit_type = /obj/item/clothing/suit/space/hardsuit/powerarmor
 
+/datum/action/item_action/extendotool
+	name = "Extend Holotool"
+	desc = "Extend the Power Armor's holotool."
+
+/obj/item/holotool/powerarmor-holotool/ui_action_click(mob/user, action)
+	var/datum/action/item_action/hightractionaction = action
+	if(istype(action, /datum/action/item_action/extendotool) && istype(loc, /obj/item/clothing/suit/space/hardsuit))
+		var/mob/living/carbon/human/H = user
+		if(H)
+			var/obj/item/arm_item = user.get_active_held_item()
+			if(arm_item)
+				if(!user.dropItemToGround(arm_item))
+					to_chat(user, "<span class='warning'>Your [arm_item] interferes with the activation of [src]!</span>")
+					return
+				else
+					to_chat(user, "<span class='notice'>You drop [arm_item] to activate [src]!</span>")
+			user.put_in_r_hand(src)
+			ADD_TRAIT(src, TRAIT_NODROP, "hardsuit")
+			playsound(get_turf(user), 'sound/mecha/mechmove03.ogg', 50, pick(-1,0,1))
+			extendo = !extendo
+			if(istype(hightractionaction))
+				hightractionaction.desc = "[extendo ? "Retract":"Extend"] the Power Armor's's holotool."
+
+/obj/item/holotool/powerarmor-holotool/CtrlClick(mob/user)
+	var/obj/item/clothing/suit/space/hardsuit/hard = user.get_item_by_slot(SLOT_WEAR_SUIT)
+	if(!istype(hard))
+		to_chat(user, "<span class='notice'>[src] can only be used while attached to a hardsuit.</span>")
+		return FALSE
+	else if(!(src in hard.currentattachments))
+		to_chat(user, "<span class='notice'>[src] can only be used while attached to a hardsuit.</span>")
+		return FALSE
+	else
+		update_listing()
+		var/chosen = show_radial_menu(user, src, radial_modes, custom_check = CALLBACK(src, .proc/check_menu,user))
+		if(!check_menu(user))
+			return
+		if(chosen)
+			var/new_tool = LAZYACCESS(mode_names, chosen)
+			if(new_tool)
+				switch_tool(user, new_tool)
+
+
 //Power armor
 /obj/item/clothing/head/helmet/space/hardsuit/powerarmor
 	name = "Power Armor Helmet MK. I"
