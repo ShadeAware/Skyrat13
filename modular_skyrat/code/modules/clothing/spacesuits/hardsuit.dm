@@ -107,7 +107,7 @@
 					to_chat(user, "<span class='notice'>You drop [arm_item] to activate [src]!</span>")
 			user.put_in_r_hand(src)
 			ADD_TRAIT(src, TRAIT_NODROP, "hardsuit")
-			playsound(get_turf(user), 'sound/mecha/mechmove03.ogg', 50, pick(-1,0,1))
+			playsound(get_turf(user), 'sound/mecha/mechmove03.ogg', 50, pick(list(-1,0,1)))
 			extendo = !extendo
 			if(istype(hightractionaction))
 				hightractionaction.desc = "[extendo ? "Retract":"Extend"] the hardsuit's blade."
@@ -178,42 +178,42 @@
 	item_state_on = "pwrblade-1"
 	suit_type = /obj/item/clothing/suit/space/hardsuit/powerarmor
 
-/obj/item/holotool/powerarmor-holotool
+/obj/item/holotool/powerarmor_holotool
 	name = "Power Armor holotool"
 	desc = "An advanced hardlight projection apparatus, tuned to form the shapes of commonly used tools. Made to be attached to a suit of Power Armor."
 	suit_attachment = TRUE
 	suit_type = /obj/item/clothing/suit/space/hardsuit/powerarmor
+	var/extendo = FALSE
 
 /datum/action/item_action/extendotool
 	name = "Extend Holotool"
 	desc = "Extend the Power Armor's holotool."
 
-/obj/item/holotool/powerarmor-holotool/ui_action_click(mob/user, action)
-	var/datum/action/item_action/hightractionaction = action
-	if(istype(action, /datum/action/item_action/extendotool) && istype(loc, /obj/item/clothing/suit/space/hardsuit))
-		var/mob/living/carbon/human/H = user
-		if(H)
-			var/obj/item/arm_item = user.get_active_held_item()
-			if(arm_item)
-				if(!user.dropItemToGround(arm_item))
-					to_chat(user, "<span class='warning'>Your [arm_item] interferes with the activation of [src]!</span>")
-					return
-				else
-					to_chat(user, "<span class='notice'>You drop [arm_item] to activate [src]!</span>")
-			user.put_in_r_hand(src)
-			ADD_TRAIT(src, TRAIT_NODROP, "hardsuit")
-			playsound(get_turf(user), 'sound/mecha/mechmove03.ogg', 50, pick(-1,0,1))
-			extendo = !extendo
-			if(istype(hightractionaction))
-				hightractionaction.desc = "[extendo ? "Retract":"Extend"] the Power Armor's's holotool."
+/obj/item/holotool/powerarmor_holotool/ui_action_click(mob/user, action)
+var/datum/action/item_action/hightractionaction = action
+if(istype(action) && istype(loc, /obj/item/clothing/suit/space/hardsuit/))
+	var/mob/living/carbon/human/H = user
+	if(H)
+		var/obj/item/arm_item = user.get_active_held_item()
+		if(arm_item)
+			if(!user.dropItemToGround(arm_item))
+				to_chat(user, "<span class='warning'>Your [arm_item] interferes with the activation of [src]!</span>")
+				return
+			else
+				to_chat(user, "<span class='notice'>You drop [arm_item] to activate [src]!</span>")
+		user.put_in_r_hand(src)
+		ADD_TRAIT(src, TRAIT_NODROP, "hardsuit")
+		playsound(get_turf(user), 'sound/mecha/mechmove03.ogg', 50, pick(list(-1,0,1)))
+		if(istype(hightractionaction))
+			hightractionaction.desc = "Toggle the Power Armor's holotool."
 
-/obj/item/holotool/powerarmor-holotool/CtrlClick(mob/user)
+/obj/item/holotool/powerarmor_holotool/CtrlClick(mob/user)
 	var/obj/item/clothing/suit/space/hardsuit/hard = user.get_item_by_slot(SLOT_WEAR_SUIT)
 	if(!istype(hard))
-		to_chat(user, "<span class='notice'>[src] can only be used while attached to a hardsuit.</span>")
+		to_chat(user, "<span class='notice'>[src] can only be used while attached to a suit of Power Armor.</span>")
 		return FALSE
 	else if(!(src in hard.currentattachments))
-		to_chat(user, "<span class='notice'>[src] can only be used while attached to a hardsuit.</span>")
+		to_chat(user, "<span class='notice'>[src] can only be used while attached to a suit of Power Armor.</span>")
 		return FALSE
 	else
 		update_listing()
@@ -242,8 +242,12 @@
 
 /obj/item/clothing/head/helmet/space/hardsuit/powerarmor/Initialize()
 	. = ..()
-	AddComponent(/datum/component/spraycan_paintable)
 	update_icon()
+
+
+/obj/item/clothing/head/helmet/space/hardsuit/powerarmor/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/spraycan_paintable)
 
 /obj/item/clothing/head/helmet/space/hardsuit/powerarmor/update_overlays()
 	. = ..()
@@ -301,8 +305,11 @@
 
 /obj/item/clothing/suit/space/hardsuit/powerarmor/Initialize()
 	. = ..()
-	AddComponent(/datum/component/spraycan_paintable)
 	update_icon()
+
+/obj/item/clothing/suit/space/hardsuit/powerarmor/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/spraycan_paintable)
 
 /obj/item/clothing/suit/space/hardsuit/powerarmor/update_overlays()
 	. = ..()
