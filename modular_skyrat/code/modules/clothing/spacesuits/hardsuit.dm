@@ -190,22 +190,32 @@
 	desc = "Extend the Power Armor's holotool."
 
 /obj/item/holotool/powerarmor_holotool/ui_action_click(mob/user, action)
-var/datum/action/item_action/hightractionaction = action
-if(istype(action) && istype(loc, /obj/item/clothing/suit/space/hardsuit/))
-	var/mob/living/carbon/human/H = user
-	if(H)
-		var/obj/item/arm_item = user.get_active_held_item()
-		if(arm_item)
-			if(!user.dropItemToGround(arm_item))
-				to_chat(user, "<span class='warning'>Your [arm_item] interferes with the activation of [src]!</span>")
-				return
-			else
-				to_chat(user, "<span class='notice'>You drop [arm_item] to activate [src]!</span>")
+	var/datum/action/item_action/hightractionaction = action
+	if(istype(action) && istype(loc, /obj/item/clothing/suit/space/hardsuit/))
+		var/mob/living/carbon/human/H = user
+		if(H)
+			var/obj/item/arm_item = user.get_active_held_item()
+			if(arm_item)
+				if(!user.dropItemToGround(arm_item))
+					to_chat(user, "<span class='warning'>Your [arm_item] interferes with the activation of [src]!</span>")
+					return
+				else
+					to_chat(user, "<span class='notice'>You drop [arm_item] to activate [src]!</span>")
 		user.put_in_r_hand(src)
 		ADD_TRAIT(src, TRAIT_NODROP, "hardsuit")
 		playsound(get_turf(user), 'sound/mecha/mechmove03.ogg', 50, pick(list(-1,0,1)))
+		extendo = !extendo
 		if(istype(hightractionaction))
-			hightractionaction.desc = "Toggle the Power Armor's holotool."
+			hightractionaction.desc = "[extendo ? "Retract":"Extend"] the Power Armor's holotool."
+
+	else if (istype(action) && !istype(loc, /obj/item/clothing/suit/space/hardsuit))
+		REMOVE_TRAIT(src, TRAIT_NODROP, "hardsuit")
+		user.transferItemToLoc(src, user.get_item_by_slot(SLOT_WEAR_SUIT))
+		playsound(get_turf(user), 'sound/mecha/mechmove03.ogg', 50, 1)
+		extendo = !extendo
+		if(istype(hightractionaction))
+			hightractionaction.desc = "[extendo ? "Retract":"Extend"] the Power Armors holotool."
+
 
 /obj/item/holotool/powerarmor_holotool/CtrlClick(mob/user)
 	var/obj/item/clothing/suit/space/hardsuit/hard = user.get_item_by_slot(SLOT_WEAR_SUIT)
