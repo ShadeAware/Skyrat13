@@ -165,6 +165,25 @@
 /obj/item/tank/jetpack/suit
 	suit_attachment = TRUE
 
+///////////////////////// POWER ARMOR MODULES /////////////////////////////
+/obj/item/melee/transforming/armblade/powerarmor-blade
+	name = "Power Armor armblade"
+	desc = "A long, sharp and retractable arm-mounted blade. Made to be attached to a suit of Power Armor."
+	icon = 'modular_skyrat/icons/obj/powerarmor_attachments.dmi'
+	icon_state = "powerblade0"
+	icon_state_on = "powerblade1"
+	lefthand_file = 'icons/mob/inhands/weapons/pwrblade_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/pwrblade_righthand.dmi'
+	item_state = "pwrblade-0"
+	item_state_on = "pwrblade-1"
+	suit_type = /obj/item/clothing/suit/space/hardsuit/powerarmor
+
+/obj/item/holotool/powerarmor-holotool
+	name = "Power Armor holotool"
+	desc = "An advanced hardlight projection apparatus, tuned to form the shapes of commonly used tools. Made to be attached to a suit of Power Armor."
+	suit_attachment = TRUE
+	suit_type = /obj/item/clothing/suit/space/hardsuit/powerarmor
+
 //Power armor
 /obj/item/clothing/head/helmet/space/hardsuit/powerarmor
 	name = "Power Armor Helmet MK. I"
@@ -234,6 +253,7 @@
 	var/stamdamageemp = 200
 	var/brutedamageemp = 20
 	var/rebootdelay
+	var/mob/living/carbon/wearer
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/powerarmor
 	mutantrace_variation = STYLE_DIGITIGRADE
 
