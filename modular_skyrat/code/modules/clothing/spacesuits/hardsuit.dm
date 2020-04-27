@@ -172,8 +172,8 @@
 	icon = 'modular_skyrat/icons/obj/powerarmor_attachments.dmi'
 	icon_state = "powerblade0"
 	icon_state_on = "powerblade1"
-	lefthand_file = 'icons/mob/inhands/weapons/pwrblade_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/pwrblade_righthand.dmi'
+	lefthand_file = 'modular_skyrat/icons/mob/inhands/weapons/pwrblade_lefthand.dmi'
+	righthand_file = 'modular_skyrat/icons/mob/inhands/weapons/pwrblade_righthand.dmi'
 	item_state = "pwrblade-0"
 	item_state_on = "pwrblade-1"
 	suit_type = /obj/item/clothing/suit/space/hardsuit/powerarmor
@@ -189,8 +189,9 @@
 	name = "Extend Holotool"
 	desc = "Extend the Power Armor's holotool."
 
-var/datum/action/item_action/hightractionaction = action
-	if(istype(action) && istype(loc, /obj/item/clothing/suit/space/hardsuit/))
+/obj/item/holotool/powerarmor_holotool/ui_action_click(mob/user, action)
+	var/datum/action/item_action/hightractionaction = action
+	if(istype(hightractionaction) && istype(loc, /obj/item/clothing/suit/space/hardsuit/))
 		var/mob/living/carbon/human/H = user
 		if(H)
 			var/obj/item/arm_item = user.get_active_held_item()
@@ -208,7 +209,7 @@ var/datum/action/item_action/hightractionaction = action
 			hightractionaction.desc = "Toggle the Power Armor's holotool."
 			hightractionaction.desc = "[extendo ? "Retract":"Extend"] the Power Armor's holotool."
 
-	else if (istype(action) && !istype(loc, /obj/item/clothing/suit/space/hardsuit))
+	else if (istype(hightractionaction) && !istype(loc, /obj/item/clothing/suit/space/hardsuit))
 		REMOVE_TRAIT(src, TRAIT_NODROP, "hardsuit")
 		user.transferItemToLoc(src, user.get_item_by_slot(SLOT_WEAR_SUIT))
 		playsound(get_turf(user), 'sound/mecha/mechmove03.ogg', 50, 1)

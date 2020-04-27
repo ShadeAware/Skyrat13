@@ -1,12 +1,12 @@
 /obj/item/holotool ////////////////ALL credit to Hippie Station (!!!)
 	name = "experimental holotool"
 	desc = "A highly experimental holographic tool projector."
-	icon = 'hippiestation/icons/obj/holotool.dmi'
+	icon = 'modular_skyrat/icons/obj/holotool.dmi'
 	icon_state = "holotool"
 	slot_flags = ITEM_SLOT_BELT
 	usesound = 'sound/items/pshoom.ogg'
-	lefthand_file = 'hippiestation/icons/mob/inhands/lefthand.dmi'
-	righthand_file = 'hippiestation/icons/mob/inhands/righthand.dmi'
+	lefthand_file = 'modular_skyrat/icons/mob/inhands/holotools_lefthand.dmi'
+	righthand_file = 'modular_skyrat/icons/mob/inhands/holotools_righthand.dmi'
 	actions_types = list(/datum/action/item_action/change_tool, /datum/action/item_action/change_ht_color)
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
