@@ -338,7 +338,7 @@
 	category = list("Durand")
 
 //H.O.N.K
-/datum/design/honk_chassis
+/*/datum/design/honk_chassis
 	name = "Exosuit Chassis (\"H.O.N.K\")"
 	id = "honk_chassis"
 	build_type = MECHFAB
@@ -401,6 +401,7 @@
 	construction_time = 200
 	category = list("H.O.N.K")
 
+*/         //SKYRAT CHANGE - Removal of HONK from normal play.
 
 //Phazon
 /datum/design/phazon_chassis
@@ -530,7 +531,7 @@
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
-/datum/design/mech_mousetrap_mortar
+/*/datum/design/mech_mousetrap_mortar
 	name = "H.O.N.K Mousetrap Mortar"
 	id = "mech_mousetrap_mortar"
 	build_type = MECHFAB
@@ -564,7 +565,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/punching_glove
 	materials = list(/datum/material/iron=20000,/datum/material/bananium=7500)
 	construction_time = 400
-	category = list("Exosuit Equipment")
+	category = list("Exosuit Equipment")*/ //SKYRAT CHANGE - Remove HONK from normal play
 
 /////////////////////////////////////////
 //////////////Borg Upgrades//////////////
