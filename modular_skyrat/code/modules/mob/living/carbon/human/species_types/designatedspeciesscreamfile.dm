@@ -67,3 +67,12 @@
 
 /datum/species/zombie/infectious
 	screamsounds = list('modular_skyrat/sound/zombie/zombie_scream.ogg')
+
+/datum/species/zombie/infectious/ipc
+	screamsounds = list('modular_skyrat/sound/zombie/synth_zombie_scream.ogg')
+
+/datum/species/zombie/infectious/synthliz
+	screamsounds = list('modular_skyrat/sound/zombie/synth_zombie_scream.ogg')
+
+/datum/species/zombie/infectious/nightmare
+	screamsounds = list('modular_skyrat/sound/zombie/zombie_nightmare_scream.ogg')

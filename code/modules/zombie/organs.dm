@@ -74,9 +74,33 @@
 	if(!converts_living && owner.stat != DEAD)
 		return
 
-	if(!iszombie(owner))
+	if(!iszombie(owner)) //SKYRAT CHANGE - This checks for what species the owner is; depending on what they are, they become a different subtype of zombie.
 		old_species = owner.dna.species.type
-		owner.set_species(/datum/species/zombie/infectious)
+		switch(old_species)
+			if(/datum/species/lizard)
+				owner.set_species(/datum/species/zombie/infectious/lizard)
+			if(/datum/species/plasmaman)
+				owner.set_species(/datum/species/zombie/infectious/plasma)
+			if(/datum/species/insect)
+				owner.set_species(/datum/species/zombie/infectious/insect)
+			if(/datum/species/insect/moth)
+				owner.set_species(/datum/species/zombie/infectious/moth)
+			if(/datum/species/fly)
+				owner.set_species(/datum/species/zombie/infectious/moth)
+			if(/datum/species/mush)
+				owner.set_species(/datum/species/zombie/infectious/mush)
+			if(/datum/species/ipc)
+				owner.set_species(/datum/species/zombie/infectious/ipc)
+			if(/datum/species/synthliz)
+				owner.set_species(/datum/species/zombie/infectious/synthliz)
+			if(/datum/species/xeno)
+				owner.set_species(/datum/species/zombie/infectious/xeno)
+			if(/datum/species/vox)
+				owner.set_species(/datum/species/zombie/infectious/vox)
+			/*if(/datum/species/shadow/nightmare)
+				owner.set_species(/datum/species/zombie/infectious/nightmare)*/ //This didn't work right; commenting out for now incase someone else wants to fix it later down the line.
+			else
+				owner.set_species(/datum/species/zombie/infectious)
 
 	var/stand_up = (owner.stat == DEAD) || (owner.stat == UNCONSCIOUS)
 
