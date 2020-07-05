@@ -97,8 +97,8 @@
 				owner.set_species(/datum/species/zombie/infectious/xeno)
 			if(/datum/species/vox)
 				owner.set_species(/datum/species/zombie/infectious/vox)
-			/*if(/datum/species/shadow/nightmare)
-				owner.set_species(/datum/species/zombie/infectious/nightmare)*/ //This didn't work right; commenting out for now incase someone else wants to fix it later down the line.
+			if(/datum/species/shadow/nightmare)
+				owner.set_species(/datum/species/zombie/infectious/nightmare)
 			else
 				owner.set_species(/datum/species/zombie/infectious)
 

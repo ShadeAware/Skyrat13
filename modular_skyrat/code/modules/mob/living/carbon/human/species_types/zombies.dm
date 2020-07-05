@@ -12,8 +12,10 @@
 
 /datum/species/zombie/infectious/lizard
 	icon_limbs = 'modular_skyrat/icons/mob/zombies/zombie_lizard.dmi'
+	mutanttail = /obj/item/organ/tail/zombie_lizard
+	id = "zombie_lizard"
 
-/datum/species/zombie/infectious/plasma
+/datum/species/zombie/infectious/plasma //Plasmamen normally can't be infected, but in the off-chance one of them becomes a zombie (or the admins will it to be), here we have an infected variant.
 	sexes = 0
 	meat = /obj/item/stack/sheet/mineral/plasma
 	icon_limbs = 'modular_skyrat/icons/mob/zombies/zombie_plasmaman.dmi'
@@ -23,6 +25,7 @@
 	mutantstomach = /obj/item/organ/stomach/plasmaman
 	var/internal_fire = FALSE
 	outfit_important_for_life = /datum/outfit/plasmaman
+	id = "zombie_plasmaman"
 
 /datum/species/zombie/infectious/plasma/spec_life(mob/living/carbon/human/H)
 	var/datum/gas_mixture/environment = H.loc.return_air()
@@ -59,13 +62,16 @@
 /datum/species/zombie/infectious/insect
 	icon_limbs = 'modular_skyrat/icons/mob/zombies/zombie_insect.dmi'
 	icon_eyes = 'modular_skyrat/icons/mob/blank_eyes.dmi'
+	id = "zombie_insect"
 
 /datum/species/zombie/infectious/moth
 	icon_limbs = 'modular_skyrat/icons/mob/zombies/zombie_moth.dmi'
 	icon_eyes = 'modular_skyrat/icons/mob/blank_eyes.dmi'
+	id = "zombie_moth"
 
 /datum/species/zombie/infectious/mush
 	icon_limbs = 'modular_skyrat/icons/mob/zombies/zombie_mushroom.dmi'
+	id = "zombie_mush"
 
 /datum/species/zombie/infectious/ipc
 	species_traits = list(NOBLOOD,NOZOMBIE,NOTRANSSTING,NOHUSK,ROBOTIC_LIMBS,NO_DNA_COPY)
@@ -79,6 +85,7 @@
 	mutantlungs = /obj/item/organ/lungs/robot_ipc
 	mutant_heart = /obj/item/organ/heart/robot_ipc
 	mutantliver = /obj/item/organ/liver/robot_ipc
+	id = "zombie_ipc"
 
 /datum/species/zombie/infectious/synthliz
 	species_traits = list(NOBLOOD,NOZOMBIE,NOTRANSSTING,NOHUSK,ROBOTIC_LIMBS,NO_DNA_COPY)
@@ -92,26 +99,42 @@
 	mutantlungs = /obj/item/organ/lungs/robot_ipc
 	mutant_heart = /obj/item/organ/heart/robot_ipc
 	mutantliver = /obj/item/organ/liver/robot_ipc
+	id = "zombie_synthliz"
 
 /datum/species/zombie/infectious/xeno
 	icon_limbs = 'modular_skyrat/icons/mob/zombies/zombie_xeno.dmi'
 	icon_eyes = 'modular_skyrat/icons/mob/blank_eyes.dmi'
+	mutanttail = /obj/item/organ/tail/zombie_lizard
+	id = "zombie_xeno"
 
 /datum/species/zombie/infectious/vox
 	icon_limbs = 'modular_skyrat/icons/mob/zombies/zombie_vox.dmi'
 	icon_eyes = 'modular_skyrat/icons/mob/blank_eyes.dmi'
+	id = "zombie_vox"
 
 /datum/species/zombie/infectious/nightmare //If you see this, you fucked up REALLY hard. Kiss your sorry ass goodbye and say hello to the scariest motherfucker on station.
-	limbs_id = "shadow"
+	icon_limbs = 'modular_skyrat/icons/mob/zombies/zombie_shadow.dmi'
+	id = "zombie_nightmare"
 	burnmod = 1.5
 	mutanteyes = /obj/item/organ/eyes/night_vision/nightmare
-	mutant_organs = list(/obj/item/organ/heart/nightmare)
-	mutant_brain = /obj/item/organ/brain/nightmare
+	mutant_organs = list(/obj/item/organ/heart/zombie_nightmare)
+	mutant_brain =/obj/item/organ/brain/zombie_nightmare
 	mutanthands = /obj/item/zombie_hand/nightmare
+	species_traits = list(NOBLOOD,NO_UNDERWEAR,NO_DNA_COPY,NOTRANSSTING,NOEYES,NOGENITALS,NOAROUSAL,NOZOMBIE)
+	inherent_traits = list(TRAIT_RESISTCOLD,TRAIT_RESISTHIGHPRESSURE,TRAIT_RESISTLOWPRESSURE,TRAIT_RADIMMUNE,TRAIT_LIMBATTACHMENT,TRAIT_NOBREATH,TRAIT_NODEATH,TRAIT_NOLIMBDISABLE,TRAIT_UNINTELLIGIBLE_SPEECH,TRAIT_FREESPRINT,TRAIT_TASED_RESISTANCE,TRAIT_STUNIMMUNE,TRAIT_PIERCEIMMUNE,TRAIT_NODISMEMBER,TRAIT_NOHUNGER)
 
-	var/info_text = "You are a <span class='danger'>Nanite Horror Nightmare</span>. The ability <span class='warning'>shadow walk</span> allows unlimited, unrestricted movement in the dark while activated. \
-					You will automatically dodge gunfire and melee attacks when on a dark tile. If killed, you will eventually revive if left in darkness. \
-					Your body hungers for darkness... and for flesh. The nanite tumor in your brain wills you to spread their infection with your <span class='warning'>zombie claws.</span> Your nature as a creature of darkness also allow these to destroy any lights almost instantly."
+	var/info_text = "You are a <span class='alien'><b>Nanite Horror Nightmare</b></span>. The ability <span class='alien'><b>shadow walk</b></span> allows unlimited, unrestricted movement in the dark while activated. \
+					You will automatically dodge gunfire and melee attacks when on a dark tile. The nanites bound to your dark form prevent most forms of death. \
+					Your body hungers for darkness... and for flesh. The nanite tumor in your brain wills you to spread their infection with your <span class='alien'><b>zombie claws.</b></span> Your nature as a creature of darkness also allow these to destroy any lights almost instantly. \
+					<span class='warning'><b>Feast upon the flesh of the crew, and spread your gift to all those who fall beneath the sharp caress of your daggered fingers.</b></span>"
+
+/datum/species/zombie/infectious/nightmare/on_species_gain(mob/living/carbon/C, datum/species/old_species)
+	. = ..()
+	C.AddElement(/datum/element/photosynthesis, 1, 1, 0, 0, 0, 0, SHADOW_SPECIES_LIGHT_THRESHOLD, SHADOW_SPECIES_LIGHT_THRESHOLD)
+
+/datum/species/shadow/on_species_loss(mob/living/carbon/C)
+	. = ..()
+	C.RemoveElement(/datum/element/photosynthesis, 1, 1, 0, 0, 0, 0, SHADOW_SPECIES_LIGHT_THRESHOLD, SHADOW_SPECIES_LIGHT_THRESHOLD)
 
 /datum/species/zombie/infectious/nightmare/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	. = ..()

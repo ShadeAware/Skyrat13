@@ -14,6 +14,7 @@
 	icon_state = "clawhand_left_NM"
 	icon_left = "clawhand_left_NM"
 	icon_right = "clawhand_right_NM"
+	force = 25
 
 /obj/item/zombie_hand/nightmare/afterattack(atom/movable/AM, mob/user, proximity)
 	. = ..()
