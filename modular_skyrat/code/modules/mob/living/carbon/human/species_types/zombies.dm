@@ -12,6 +12,7 @@
 
 /datum/species/zombie/infectious/lizard
 	icon_limbs = 'modular_skyrat/icons/mob/zombies/zombie_lizard.dmi'
+	mutant_bodyparts = list("tail_lizard")
 	mutanttail = /obj/item/organ/tail/zombie_lizard
 	id = "zombie_lizard"
 
@@ -104,6 +105,7 @@
 /datum/species/zombie/infectious/xeno
 	icon_limbs = 'modular_skyrat/icons/mob/zombies/zombie_xeno.dmi'
 	icon_eyes = 'modular_skyrat/icons/mob/blank_eyes.dmi'
+	mutant_bodyparts = list("tail_lizard")
 	mutanttail = /obj/item/organ/tail/zombie_lizard
 	id = "zombie_xeno"
 
