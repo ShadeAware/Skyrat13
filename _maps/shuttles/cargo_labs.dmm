@@ -1,0 +1,23 @@
+"a" = (/obj/structure/shuttle/engine/propulsion,/turf/open/space/basic,/area/space)
+"d" = (/obj/machinery/door/poddoor{id = "QMLoaddoor2"; name = "supply dock loading door"},/obj/machinery/conveyor{dir = 8; id = "QMLoad"},/turf/open/floor/mineral/titanium/blue,/area/space)
+"e" = (/obj/machinery/door/airlock/titanium{name = "Supply Shuttle Airlock"; req_access_txt = "31"},/turf/open/floor/mineral/titanium/blue,/area/space)
+"u" = (/turf/closed/wall/mineral/titanium,/area/space)
+"C" = (/obj/machinery/door/airlock/titanium{name = "Supply Shuttle Airlock"; req_access_txt = "31"},/obj/docking_port/mobile/supply{dir = 4},/turf/open/floor/mineral/titanium/blue,/area/space)
+"D" = (/obj/structure/shuttle/engine/heater,/obj/structure/window/reinforced{dir = 1},/turf/open/space/basic,/area/space)
+"N" = (/turf/open/floor/mineral/titanium/blue,/area/space)
+"V" = (/obj/machinery/door/poddoor{id = "QMLoaddoor"; name = "supply dock loading door"},/obj/machinery/conveyor{dir = 4; id = "QMLoad2"},/turf/open/floor/mineral/titanium/blue,/area/space)
+
+(1,1,1) = {"
+uuuuu
+uNNNu
+uNNNu
+VNNNu
+CNNNu
+uNNNu
+eNNNu
+dNNNu
+uNNNu
+uNNNu
+uDDDu
+aaaaa
+"}
