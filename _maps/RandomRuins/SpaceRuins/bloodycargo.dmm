@@ -1,0 +1,298 @@
+"aZ" = (/obj/effect/turf_decal/stripes/line{dir = 4},/turf/open/floor/plating,/area/space)
+"bv" = (/obj/effect/spawner/structure/window/shuttle,/turf/open/floor/plating,/area/space)
+"bS" = (/obj/structure/table,/obj/effect/turf_decal/trimline/blue/filled/line{dir = 4},/turf/open/floor/plasteel/white,/area/space)
+"cg" = (/obj/effect/decal/remains/human{desc = "They look like human remains, and have clearly been gnawed at."},/obj/item/clothing/head/caphat/beret/white{desc = "A white Commander's beret commonly worn by Solar Federation ship commanders."; name = "Ship Commander's Beret"; pixel_x = 15; pixel_y = 9},/obj/effect/decal/cleanable/blood/old,/turf/open/floor/plasteel,/area/space)
+"ck" = (/obj/machinery/processor,/turf/open/floor/plasteel/cafeteria,/area/space)
+"cx" = (/obj/effect/decal/cleanable/robot_debris/old{desc = "The remains of some unfortunate cyborg or synthetic."},/turf/open/floor/plasteel,/area/space)
+"cz" = (/obj/effect/turf_decal/plaque,/turf/open/floor/plasteel,/area/space)
+"cK" = (/obj/effect/decal/cleanable/blood/old{dir = 4; icon_state = "trails_1"; name = "dried blood trail"},/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 4},/turf/open/floor/plasteel,/area/space)
+"cO" = (/obj/item/cigbutt/cigarbutt{pixel_x = 5; pixel_y = -1},/turf/open/floor/plasteel,/area/space)
+"cV" = (/obj/structure/table,/obj/machinery/microwave{pixel_x = -3; pixel_y = 6},/turf/open/floor/plasteel/cafeteria,/area/space)
+"dr" = (/turf/open/floor/plasteel,/area/space)
+"dM" = (/obj/machinery/light/small,/turf/open/floor/plating,/area/space)
+"dQ" = (/turf/closed/wall/mineral/titanium/interior,/area/space)
+"dV" = (/obj/effect/turf_decal/stripes/line{dir = 1},/turf/open/floor/plating,/area/space)
+"eb" = (/obj/machinery/light,/turf/open/floor/plasteel/white,/area/space)
+"ec" = (/obj/machinery/door/airlock/external,/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 4},/turf/open/floor/plating,/area/space)
+"eF" = (/obj/effect/decal/cleanable/ash,/turf/open/floor/plasteel/white,/area/space)
+"eT" = (/obj/effect/decal/cleanable/generic,/obj/effect/decal/cleanable/blood/old,/turf/open/floor/plasteel/white,/area/space)
+"eW" = (/obj/machinery/light{dir = 8; light_color = "#e8eaff"},/turf/open/floor/plating,/area/space)
+"fa" = (/obj/structure/cable{icon_state = "0-4"},/obj/machinery/light,/turf/open/floor/plasteel/white,/area/space)
+"fb" = (/obj/effect/turf_decal/trimline/blue/filled/line{dir = 4},/obj/item/storage/firstaid/regular{empty = 1; pixel_x = 2; pixel_y = 3},/turf/open/floor/plasteel/white,/area/space)
+"fA" = (/obj/structure/cable{icon_state = "1-4"},/turf/open/floor/plasteel/cafeteria,/area/space)
+"gb" = (/obj/machinery/sleeper,/turf/open/floor/plasteel/white,/area/space)
+"gi" = (/obj/machinery/light/small/broken,/turf/open/floor/plating,/area/space)
+"gw" = (/obj/machinery/iv_drip,/obj/effect/turf_decal/trimline/blue/filled/line{dir = 8},/turf/open/floor/plasteel/white,/area/space)
+"gI" = (/obj/structure/table,/obj/item/scalpel/advanced,/obj/machinery/light{dir = 1},/turf/open/floor/plasteel/white,/area/space)
+"gJ" = (/obj/structure/cable{icon_state = "1-2"},/turf/closed/wall/mineral/titanium,/area/space)
+"gV" = (/turf/template_noop,/area/space)
+"gX" = (/obj/structure/chair/stool{pixel_y = 8},/obj/effect/decal/cleanable/blood/old{name = "dried blood splatter"; pixel_x = -29},/obj/effect/decal/cleanable/blood/old{dir = 5; icon_state = "trails_1"; name = "dried blood trail"},/turf/open/floor/plasteel/cafeteria,/area/space)
+"hq" = (/turf/open/floor/plating/airless,/area/space)
+"hC" = (/obj/structure/closet/secure_closet/freezer/kitchen,/turf/open/floor/plasteel/freezer,/area/space)
+"hN" = (/obj/machinery/power/smes/engineering{charge = 0},/obj/structure/cable,/obj/structure/cable,/turf/open/floor/plating,/area/space)
+"hY" = (/obj/machinery/computer{desc = "Some sort of computer console. Whatever OS it may have been running appears to have encounter some kind of power-related error.; dir = 4; name = "Malfunctioning Computer'},/turf/open/floor/plasteel,/area/space)
+"iq" = (/obj/structure/cable{icon_state = "0-2"},/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue,/turf/open/floor/plasteel,/area/space)
+"jm" = (/obj/machinery/light,/turf/open/floor/mineral/titanium/blue,/area/space)
+"jz" = (/obj/machinery/light{dir = 1},/turf/open/floor/plasteel,/area/space)
+"jJ" = (/obj/effect/turf_decal/stripes/line{dir = 4},/obj/structure/closet/emcloset/anchored,/turf/open/floor/plating,/area/space)
+"jM" = (/obj/structure/closet/crate,/turf/open/floor/plating,/area/space)
+"jR" = (/obj/structure/frame/computer{anchored = 1; dir = 4},/obj/effect/decal/cleanable/glass,/obj/item/shard{icon_state = "small"},/obj/item/shard,/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel,/area/space)
+"kd" = (/obj/machinery/deepfryer,/turf/open/floor/plasteel/cafeteria,/area/space)
+"kN" = (/obj/machinery/power/terminal{dir = 1},/obj/structure/cable/yellow{icon_state = "0-2"},/turf/open/floor/plating,/area/space)
+"le" = (/turf/open/floor/mineral/titanium/blue,/area/space)
+"lv" = (/turf/closed/wall/mineral/titanium,/area/space)
+"lB" = (/obj/effect/turf_decal/stripes/line,/turf/open/floor/plating,/area/space)
+"lC" = (/obj/effect/decal/cleanable/blood/old{dir = 9; icon_state = "trails_1"; name = "dried blood trail"},/turf/open/floor/plasteel/cafeteria,/area/space)
+"lH" = (/obj/effect/decal/cleanable/blood/old{pixel_y = 11},/obj/effect/decal/cleanable/generic,/turf/open/floor/plasteel,/area/space)
+"mb" = (/obj/effect/decal/cleanable/glass,/obj/effect/decal/cleanable/blood/old{dir = 5; icon_state = "trails_1"; name = "dried blood trail"},/turf/open/floor/plasteel/white,/area/space)
+"mB" = (/obj/effect/turf_decal/tile/blue,/obj/effect/turf_decal/tile/blue{dir = 8},/obj/machinery/light/broken,/turf/open/floor/plasteel,/area/space)
+"mN" = (/obj/effect/turf_decal/tile/blue,/obj/effect/turf_decal/tile/blue{dir = 4},/turf/open/floor/plasteel,/area/space)
+"nk" = (/obj/effect/decal/cleanable/blood/old,/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/plasteel/white,/area/space)
+"nR" = (/obj/effect/turf_decal/trimline/blue/filled/line{dir = 8},/obj/structure/fluff/empty_sleeper,/turf/open/floor/plasteel/white,/area/space)
+"oe" = (/obj/effect/decal/cleanable/blood/gibs/old,/turf/open/floor/plasteel/cafeteria,/area/space)
+"ox" = (/obj/effect/decal/cleanable/generic,/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel,/area/space)
+"oC" = (/turf/open/floor/plasteel/freezer,/area/space)
+"oX" = (/obj/structure/closet/crate/engineering,/obj/item/stack/sheet/mineral/plasma{amount = 10},/obj/item/stack/sheet/mineral/plasma{amount = 10},/obj/item/stack/sheet/mineral/plasma{amount = 10},/turf/open/floor/plating,/area/space)
+"pb" = (/obj/item/storage/belt/medical{pixel_y = 2},/turf/open/floor/plasteel/white,/area/space)
+"pj" = (/obj/structure/cable,/obj/structure/cable,/obj/machinery/power/smes/engineering{charge = 0},/turf/open/floor/plating,/area/space)
+"pu" = (/obj/item/chair/stool,/turf/open/floor/plasteel/cafeteria,/area/space)
+"pv" = (/obj/effect/turf_decal/stripes/corner,/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plating,/area/space)
+"pS" = (/obj/machinery/computer{desc = "Some sort of computer console. Whatever OS it may have been running appears to have encounter some kind of power-related error.; dir = 1; name = "Malfunctioning Computer'},/obj/effect/turf_decal/tile/blue,/obj/effect/turf_decal/tile/blue{dir = 8},/obj/effect/turf_decal/tile/blue{dir = 4},/turf/open/floor/plasteel,/area/space)
+"pU" = (/obj/structure/cable{icon_state = "2-4"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plating,/area/space)
+"qb" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plating,/area/space)
+"rQ" = (/obj/effect/turf_decal/stripes/line{dir = 4},/turf/open/floor/plating{icon_state = "platingdmg3"},/area/space)
+"sm" = (/obj/effect/turf_decal/tile/blue,/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel,/area/space)
+"sn" = (/obj/machinery/light{dir = 1},/turf/open/floor/mineral/titanium/blue,/area/space)
+"sF" = (/turf/open/floor/plating{icon_state = "panelscorched"},/area/space)
+"sK" = (/obj/structure/cable{icon_state = "1-4"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plating,/area/space)
+"sL" = (/obj/effect/decal/cleanable/blood/old{pixel_y = 11},/obj/effect/turf_decal/tile/blue,/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel,/area/space)
+"sN" = (/obj/structure/curtain,/turf/open/floor/plasteel/white,/area/space)
+"sQ" = (/obj/effect/decal/remains/human{desc = "They look like human remains, and have clearly been gnawed at."},/turf/open/floor/plasteel,/area/space)
+"sY" = (/obj/effect/decal/cleanable/blood/old{dir = 6; icon_state = "trails_1"; name = "dried blood trail"},/turf/open/floor/plasteel/white,/area/space)
+"tj" = (/obj/machinery/computer{desc = "Some sort of computer console. Whatever OS it may have been running appears to have encounter some kind of power-related error.; dir = 4; name = "Malfunctioning Computer'},/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 8},/obj/effect/turf_decal/tile/blue,/turf/open/floor/plasteel,/area/space)
+"tT" = (/obj/machinery/computer{desc = "Some sort of computer console. Whatever OS it may have been running appears to have encounter some kind of power-related error.; name = "Malfunctioning Computer'},/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 4},/obj/machinery/light{dir = 1},/turf/open/floor/plasteel,/area/space)
+"tU" = (/obj/effect/turf_decal/trimline/blue/filled/line{dir = 1},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/space)
+"uv" = (/obj/structure/closet/crate,/obj/effect/spawner/lootdrop/maintenance{lootcount = 3; name = "3maintenance loot spawner"},/obj/effect/spawner/lootdrop/maintenance{lootcount = 3; name = "3maintenance loot spawner"},/obj/effect/spawner/lootdrop/maintenance{lootcount = 3; name = "3maintenance loot spawner"},/turf/open/floor/plating,/area/space)
+"uS" = (/obj/structure/frame/computer{anchored = 1; dir = 4},/obj/effect/decal/cleanable/glass,/obj/item/shard,/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel,/area/space)
+"uT" = (/obj/effect/decal/cleanable/chem_pile,/turf/open/floor/plasteel/cafeteria,/area/space)
+"uV" = (/obj/structure/fluff/empty_cryostasis_sleeper,/turf/open/floor/circuit,/area/space)
+"vg" = (/obj/structure/shuttle/engine/heater{dir = 4},/obj/structure/window/reinforced{dir = 8},/turf/open/floor/plating/airless,/area/space)
+"vv" = (/obj/structure/frame/computer{dir = 1},/turf/open/floor/plating,/area/space)
+"vx" = (/obj/machinery/light{dir = 1},/obj/machinery/gibber,/turf/open/floor/plasteel/cafeteria,/area/space)
+"wr" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/space)
+"wB" = (/obj/item/retractor/advanced,/turf/open/floor/plasteel/white,/area/space)
+"wN" = (/obj/machinery/computer{desc = "Some sort of computer console. Whatever OS it may have been running appears to have encounter some kind of power-related error.; dir = 4; name = "Malfunctioning Computer'},/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel,/area/space)
+"wO" = (/obj/effect/turf_decal/trimline/blue/filled/line{dir = 4},/obj/effect/decal/cleanable/blood/old{dir = 4; icon_state = "trails_1"; name = "dried blood trail"},/turf/open/floor/plasteel/white,/area/space)
+"xa" = (/obj/effect/turf_decal/trimline/blue/filled/line{dir = 4},/turf/open/floor/plasteel/white,/area/space)
+"xA" = (/obj/effect/turf_decal/caution{pixel_y = -6},/turf/open/floor/plating,/area/space)
+"xW" = (/obj/structure/cable{icon_state = "0-8"},/turf/open/floor/plasteel/cafeteria,/area/space)
+"yh" = (/obj/effect/decal/cleanable/blood/old{dir = 4; icon_state = "trails_1"; name = "dried blood trail"},/turf/open/floor/plasteel/cafeteria,/area/space)
+"ym" = (/obj/structure/table,/obj/effect/spawner/lootdrop/maintenance{lootcount = 3; name = "3maintenance loot spawner"},/obj/machinery/light/small{dir = 1; light_color = "#ffc1c1"},/turf/open/floor/plating,/area/space)
+"yo" = (/obj/structure/cable{icon_state = "1-2"},/obj/structure/cable{icon_state = "2-8"},/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plating,/area/space)
+"yu" = (/obj/effect/decal/cleanable/blood/old{icon_state = "trails_1"; name = "dried blood trail"},/turf/open/floor/plasteel/white,/area/space)
+"yJ" = (/obj/effect/decal/cleanable/molten_object,/turf/open/floor/plasteel/white,/area/space)
+"yZ" = (/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 4},/turf/open/floor/plasteel,/area/space)
+"zz" = (/obj/structure/table/optable,/obj/effect/decal/cleanable/blood/old,/turf/open/floor/plasteel/white,/area/space)
+"Af" = (/obj/effect/turf_decal/trimline/blue/filled/line{dir = 1},/turf/open/floor/plasteel,/area/space)
+"Au" = (/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue,/turf/open/floor/plasteel,/area/space)
+"AK" = (/obj/effect/decal/cleanable/glass,/turf/open/floor/plasteel/cafeteria,/area/space)
+"Bm" = (/turf/closed/wall/mineral/titanium/nodiagonal,/area/space)
+"Bw" = (/obj/item/shard{icon_state = "medium"},/turf/open/floor/plasteel,/area/space)
+"BI" = (/obj/structure/reagent_dispensers/fueltank,/turf/open/floor/plating,/area/space)
+"BW" = (/obj/structure/table,/obj/machinery/reagentgrinder,/turf/open/floor/plasteel/cafeteria,/area/space)
+"Cf" = (/obj/structure/cable/yellow{icon_state = "1-8"},/obj/structure/cable/yellow{icon_state = "1-2"},/turf/open/floor/plating,/area/space)
+"Cq" = (/obj/effect/decal/cleanable/generic,/turf/open/floor/plasteel,/area/space)
+"Cr" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel/cafeteria,/area/space)
+"Cv" = (/obj/machinery/vending/medical{pixel_x = -2},/turf/open/floor/plasteel/white,/area/space)
+"CY" = (/obj/machinery/light/small{brightness = 3; dir = 8},/turf/open/floor/plating,/area/space)
+"Dy" = (/obj/item/storage/firstaid/brute,/turf/open/floor/plasteel/white,/area/space)
+"DD" = (/obj/machinery/light/broken,/turf/open/floor/plasteel/cafeteria,/area/space)
+"DK" = (/obj/structure/frame/machine,/turf/open/floor/plating,/area/space)
+"DX" = (/obj/effect/decal/cleanable/blood/old{dir = 4; icon_state = "trails_1"; name = "dried blood trail"},/turf/open/floor/plasteel,/area/space)
+"Eh" = (/obj/item/storage/backpack/duffelbag/med,/turf/open/floor/plasteel/white,/area/space)
+"EJ" = (/obj/machinery/door/airlock/external,/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/space)
+"EN" = (/obj/effect/spawner/structure/window/hollow/reinforced/middle,/turf/template_noop,/area/space)
+"ET" = (/obj/machinery/door/airlock{name = "Kitchen"; req_access_txt = "28"},/turf/open/floor/plasteel/cafeteria,/area/space)
+"Fe" = (/obj/effect/decal/cleanable/blood/old{dir = 10; icon_state = "trails_1"; name = "dried blood trail"},/turf/open/floor/plasteel/cafeteria,/area/space)
+"Fn" = (/obj/structure/table/reinforced,/obj/item/chair/stool,/turf/open/floor/plasteel/cafeteria,/area/space)
+"FB" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/shuttle/engine/heater{dir = 4},/turf/open/floor/plating/airless,/area/space)
+"Gn" = (/obj/structure/table/reinforced,/obj/item/lighter,/turf/open/floor/plasteel,/area/space)
+"Gp" = (/obj/machinery/door/airlock/engineering{name = "Engineering"},/turf/open/floor/plating,/area/space)
+"Gz" = (/obj/structure/reagent_dispensers/cooking_oil,/obj/machinery/light{dir = 1},/turf/open/floor/plasteel/freezer,/area/space)
+"GO" = (/obj/effect/turf_decal/trimline/blue/filled/line{dir = 4},/obj/structure/closet/crate/freezer/blood,/turf/open/floor/plasteel/white,/area/space)
+"Hb" = (/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 4},/obj/machinery/light{dir = 1},/turf/open/floor/plasteel,/area/space)
+"Hg" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plating,/area/space)
+"Hi" = (/obj/effect/decal/cleanable/blood/old{dir = 8; icon_state = "trails_1"; name = "dried blood trail"},/turf/open/floor/plasteel,/area/space)
+"Ho" = (/obj/structure/cable{icon_state = "1-4"},/obj/effect/decal/cleanable/blood/old{dir = 4; icon_state = "trails_1"; name = "dried blood trail"},/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue,/turf/open/floor/plasteel,/area/space)
+"Hw" = (/obj/structure/frame/computer{anchored = 1},/obj/item/shard,/obj/effect/decal/cleanable/glass,/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue,/turf/open/floor/plasteel,/area/space)
+"HC" = (/obj/item/shank,/obj/effect/decal/remains/human{desc = "They look like human remains, and have clearly been gnawed at."},/obj/effect/turf_decal/tile/blue,/obj/effect/turf_decal/tile/blue{dir = 8},/obj/effect/turf_decal/tile/blue{dir = 1},/turf/open/floor/plasteel,/area/space)
+"HG" = (/obj/machinery/suit_storage_unit/standard_unit,/obj/effect/turf_decal/delivery,/turf/open/floor/plating,/area/space)
+"HO" = (/obj/structure/floodlight_frame,/turf/open/floor/plating,/area/space)
+"Ij" = (/obj/machinery/vending/coffee,/turf/open/floor/plating,/area/space)
+"Is" = (/obj/machinery/light/small/built{dir = 8},/turf/open/floor/plating,/area/space)
+"IQ" = (/obj/machinery/computer{desc = "Some sort of computer console. Whatever OS it may have been running appears to have encounter some kind of power-related error.; dir = 4; name = "Malfunctioning Computer'},/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 8},/obj/effect/turf_decal/tile/blue{dir = 4},/turf/open/floor/plasteel,/area/space)
+"IX" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel/white,/area/space)
+"Jc" = (/obj/structure/cable/yellow{icon_state = "2-4"},/turf/open/floor/plating,/area/space)
+"Jt" = (/turf/open/floor/plating{icon_state = "platingdmg3"},/area/space)
+"JC" = (/obj/structure/shuttle/engine/large{dir = 4},/turf/open/floor/plating/airless,/area/space)
+"JK" = (/obj/structure/table,/obj/effect/spawner/lootdrop/maintenance{lootcount = 3; name = "3maintenance loot spawner"},/turf/open/floor/plating,/area/space)
+"JM" = (/obj/structure/rack,/obj/effect/spawner/lootdrop/maintenance{lootcount = 3; name = "3maintenance loot spawner"},/obj/effect/spawner/lootdrop/maintenance{lootcount = 3; name = "3maintenance loot spawner"},/turf/open/floor/plating,/area/space)
+"JW" = (/obj/effect/decal/remains/human,/obj/effect/decal/cleanable/shreds,/turf/open/floor/plasteel/cafeteria,/area/space)
+"JX" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/plasteel,/area/space)
+"Le" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel,/area/space)
+"Lm" = (/obj/machinery/door/airlock/external,/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 8},/turf/open/floor/plating,/area/space)
+"Lp" = (/obj/structure/cable/yellow{icon_state = "1-4"},/turf/open/floor/plating,/area/space)
+"LU" = (/obj/structure/chair/stool{pixel_y = 8},/obj/effect/decal/cleanable/blood/innards,/obj/machinery/light{dir = 1},/turf/open/floor/plasteel/cafeteria,/area/space)
+"Mi" = (/obj/machinery/light/small{dir = 1; light_color = "#ffc1c1"},/turf/open/floor/plating{icon_state = "panelscorched"},/area/space)
+"Ne" = (/obj/effect/decal/cleanable/shreds,/obj/effect/decal/cleanable/blood/old{dir = 10; icon_state = "trails_1"; name = "dried blood trail"},/turf/open/floor/plasteel/white,/area/space)
+"Ni" = (/obj/effect/decal/cleanable/blood/innards,/obj/structure/table/reinforced,/turf/open/floor/plasteel/cafeteria,/area/space)
+"Nj" = (/obj/effect/turf_decal/trimline/blue/filled/line{dir = 8},/obj/effect/decal/cleanable/blood/innards,/turf/open/floor/plasteel/white,/area/space)
+"Nz" = (/obj/machinery/atmospherics/components/unary/tank/air{dir = 1},/turf/open/floor/plating,/area/space)
+"Oh" = (/obj/structure/curtain,/obj/effect/decal/cleanable/blood/old{icon_state = "trails_1"; name = "dried blood trail"},/turf/open/floor/plasteel/white,/area/space)
+"OR" = (/obj/effect/decal/cleanable/blood/old,/turf/open/floor/plasteel/cafeteria,/area/space)
+"Ph" = (/obj/effect/turf_decal/trimline/blue/filled/line{dir = 4},/obj/structure/fluff/empty_sleeper,/turf/open/floor/plasteel/white,/area/space)
+"Pl" = (/obj/effect/turf_decal/stripes/line{dir = 4},/obj/machinery/power/port_gen/pacman{anchored = 1},/obj/structure/cable/yellow{icon_state = "0-8"},/turf/open/floor/plating,/area/space)
+"Pp" = (/obj/machinery/portable_atmospherics/canister/oxygen,/turf/open/floor/plating,/area/space)
+"Pr" = (/obj/structure/frame/computer{anchored = 1; dir = 4},/obj/effect/decal/cleanable/glass,/obj/item/shard{icon_state = "medium"},/obj/item/shard{icon_state = "small"},/turf/open/floor/plasteel,/area/space)
+"PV" = (/obj/structure/table/reinforced,/obj/item/megaphone,/turf/open/floor/plasteel,/area/space)
+"PZ" = (/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/window,/turf/open/floor/plasteel/cafeteria,/area/space)
+"QA" = (/obj/machinery/light/small{dir = 1; light_color = "#ffc1c1"},/turf/open/floor/plating,/area/space)
+"QD" = (/obj/structure/closet/secure_closet/freezer/kitchen/maintenance,/turf/open/floor/plating,/area/space)
+"Rh" = (/turf/open/floor/plasteel/white,/area/space)
+"Sh" = (/obj/machinery/door/airlock/public/glass{name = "Diner"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel/cafeteria,/area/space)
+"SB" = (/obj/structure/closet/emcloset/anchored,/turf/open/floor/plating,/area/space)
+"SF" = (/obj/effect/turf_decal/trimline/blue/filled/line{dir = 8},/obj/structure/closet/l3closet,/turf/open/floor/plasteel/white,/area/space)
+"SG" = (/obj/structure/table/reinforced,/obj/item/gps{gpstag = "SOLCRG-4432RE"},/turf/open/floor/plasteel,/area/space)
+"Tb" = (/obj/structure/chair/stool{pixel_y = 8},/turf/open/floor/plasteel/cafeteria,/area/space)
+"Tf" = (/obj/machinery/light,/turf/open/floor/plasteel/cafeteria,/area/space)
+"Tk" = (/obj/structure/cable{icon_state = "0-2"; pixel_y = 1},/obj/machinery/power/smes/engineering{charge = 0},/turf/open/floor/plating,/area/space)
+"Tr" = (/obj/structure/cable/yellow{icon_state = "2-8"},/obj/structure/cable/yellow{icon_state = "1-2"},/turf/open/floor/plating,/area/space)
+"Tw" = (/turf/open/floor/plating,/area/space)
+"TH" = (/obj/structure/kitchenspike,/turf/open/floor/plasteel/freezer,/area/space)
+"TY" = (/obj/machinery/space_heater,/obj/machinery/light/small,/turf/open/floor/plating,/area/space)
+"Um" = (/obj/machinery/door/airlock/command{name = "Bridge"},/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/space)
+"Ur" = (/turf/open/floor/plasteel/cafeteria,/area/space)
+"Ut" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "1-4"},/turf/open/floor/plasteel,/area/space)
+"UD" = (/obj/structure/rack,/obj/effect/spawner/lootdrop/maintenance{lootcount = 3; name = "3maintenance loot spawner"},/turf/open/floor/plating,/area/space)
+"UH" = (/obj/structure/closet/secure_closet/medical2,/obj/effect/turf_decal/trimline/blue/filled/line{dir = 8},/turf/open/floor/plasteel/white,/area/space)
+"UM" = (/obj/structure/table/reinforced,/obj/item/radio/off{pixel_x = 6; pixel_y = 14},/turf/open/floor/plasteel,/area/space)
+"Vk" = (/obj/effect/turf_decal/tile/blue{dir = 1},/turf/open/floor/plasteel,/area/space)
+"Vs" = (/obj/structure/fluff/empty_sleeper,/obj/machinery/light/broken{dir = 1},/turf/open/floor/plasteel/white,/area/space)
+"VF" = (/obj/machinery/power/terminal,/obj/structure/cable/yellow,/turf/open/floor/plating,/area/space)
+"Wb" = (/obj/effect/decal/cleanable/blood/old{dir = 9; icon_state = "trails_1"; name = "dried blood trail"},/turf/open/floor/plasteel,/area/space)
+"Wi" = (/obj/structure/chair/stool{pixel_y = 8},/obj/effect/decal/cleanable/blood/old{dir = 4; icon_state = "trails_1"; name = "dried blood trail"},/obj/machinery/light{dir = 1},/turf/open/floor/plasteel/cafeteria,/area/space)
+"Wj" = (/obj/effect/turf_decal/stripes/corner{dir = 8},/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/plating,/area/space)
+"WA" = (/obj/structure/closet/firecloset,/turf/open/floor/plating,/area/space)
+"Xu" = (/obj/machinery/door/airlock/medical/glass{name = "Medbay"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel/white,/area/space)
+"XG" = (/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel,/area/space)
+"Yq" = (/obj/machinery/door/airlock{name = "Kitchen cold room"; req_access_txt = "28"},/turf/open/floor/plasteel/freezer,/area/space)
+"Yv" = (/obj/effect/turf_decal/stripes/line{dir = 4},/turf/open/floor/plating{icon_state = "panelscorched"},/area/space)
+"Zb" = (/obj/structure/chair/stool{pixel_y = 8},/obj/effect/decal/cleanable/blood/old{dir = 4; icon_state = "trails_1"; name = "dried blood trail"},/turf/open/floor/plasteel/cafeteria,/area/space)
+"Zt" = (/obj/item/shard{icon_state = "small"},/turf/open/floor/plasteel,/area/space)
+"Zw" = (/obj/machinery/computer{desc = "Some sort of computer console. Whatever OS it may have been running appears to have encounter some kind of power-related error.; dir = 1; name = "Malfunctioning Computer'},/obj/effect/turf_decal/tile/blue,/obj/effect/turf_decal/tile/blue{dir = 8},/obj/machinery/light/broken,/turf/open/floor/plasteel,/area/space)
+"ZA" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/space)
+"ZK" = (/obj/structure/chair/stool{pixel_y = 8},/obj/effect/decal/remains/human,/turf/open/floor/plasteel/cafeteria,/area/space)
+"ZM" = (/obj/structure/reagent_dispensers/fueltank,/obj/item/weldingtool/largetank,/turf/open/floor/plating,/area/space)
+
+(1,1,1) = {"
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvgVgVgVgVlvlvgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVlvNzTwPpTwBITwTwTwTwuvTwJKJKTwTwTwvvlvlvlvlvlvlvgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVlvTwgiTwUDTwTwTYTwTwJtTwTwdMTwTwTwTwlvIjHGHGjJFBhqgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvGplvlvTwTwTwaZFBJCgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVlvUHzzgIbSdQnRVsgbPhdQuVsnuVleuVsnuVlvTwoXlveWTwJcPlBmlvgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVlvNjNembfbdQgweTRhwOdQlelelelelelelelvTwsFlvWAJcCfaZBmlvgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVlvbvsNOhbvdQgwyupbxaleleleuVleuVlelelvIsTwlvTwVFVFaZvghqgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVlvlvlvlvlvlvlvlvlvlvlvSFwBEhyJCvRhsYDyxadQlelelelelelelelvTwTwGpTwTkTkjJvgJCgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVlvlvoxHbcKcKyZyZyZtTHwlvSFRhfaIXnkyJebeFGOdQuVjmuVleuVjmuVlvTwjMlvlvgJgJlvlvlvgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVbvIQVksQLePVLeLedrlHmNlvlvlvlvlvXulvlvlvlvlvlvlvlvlvlvlvlvlvGplvlvTwsKpvlBlBlvgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVbvwNWbdrPrcxdrUMdrBwiqlvdrjzdrAftUAfdrdrdrjzdrdrdrdrdrdrdrjzdrdrlvTwHgaZdQdQlvENENENENENgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVbvjRHiczhYCqdrdrWbDXHoUmZAZAZAZAUtZAZAZAZAJXZAZAZAZAZAZAZAZAZAZAEJqbyorQecxALmTwTwTwTwTwgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVbvuSdrdrhYdrcOGncgdrAulvdrdrdrdrdrdrdrdrdrwrdrdrdrdrdrdrdrdrdrdrlvTwHgaZdQdQlvENENENENENgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVbvtjXGZtLeSGLeLedrdrAulvlvlvlvlvlvlvlvlvlvShlvlvlvlvlvlvlvlvGplvlvTwpUWjdVdVlvgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVlvlvHCmBsmsLsmsmsmZwpSlvUrLUUrTbpuTbZbWiyhfAxWlvkdckvxBWcVlvTwTwlvlvgJgJlvlvlvgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVlvlvlvlvlvlvlvlvlvlvlvUrFnCrCrCrCrCrCrUrAKUrPZuTUrUrAKUrlvTwTwGpJthNpjjJvghqgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVlvlCCrCrNiCrCrCrCrUrUroePZUrlvlvYqlvlvCYTwlvTwkNkNYvvgJCgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVlvUrTbUrpuTbZKgXTbUrJWUrPZUrlvGzoChClvTwTwlvTwLpTraZBmlvgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVlvORDDAKUrUrUrFeTfoeUrUrETTflvTHoChClvTwTwlveWsFLpPlBmlvgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvGplvlvTwTwTwaZvghqgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVlvNzMiPpTwTwTwJKJKymSBBITwTwQATwTwTwlvTwHGHGjJvgJCgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVlvZMTwTwQDJMTwTwTwHOJtTwTwTwDKDKTwDKlvlvlvlvlvlvgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvlvgVgVgVgVlvlvgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+gVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgVgV
+"}
